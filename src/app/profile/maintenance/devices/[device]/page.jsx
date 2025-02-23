@@ -13,7 +13,6 @@ const DevicePage = () => {
           <h1 className="font-semibold ">الاجهزة</h1>
         </div>
 
-        {/* Centered Image and Device Title */}
         <div className="flex flex-col items-center mx-auto space-y-6  max-w-5xl container h-full w-full px-4">
           <div className="my-8">
             <Image alt="joystick image" width={200} src={joystic2} />
