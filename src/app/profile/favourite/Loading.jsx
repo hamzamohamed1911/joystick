@@ -12,7 +12,6 @@ const Loading = () => {
           {Array.from({ length: 4 }).map((_, index) => (
             <div key={index} className="w-full">
               <div className="p-6 rounded-lg shadow-lg relative flex flex-col md:flex-row items-center gap-6 animate-pulse">
-                {/* صورة المنتج الوهمية */}
                 <div className="bg-gray-200 flex w-full md:w-auto justify-center items-center rounded-xl h-40 "></div>
 
                 {/* تفاصيل المنتج الوهمية */}
