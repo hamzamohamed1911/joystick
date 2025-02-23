@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+  font-family: 'Tajawal', sans-serif;  font-family: 'Tajawal', sans-serif;
+}
+.font-tajawal {
+  font-family: 'Tajawal', sans-serif !important;
+}
+
+.custom-gradient {
+  background: linear-gradient(to left, #02A09B , #073433);
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+::-webkit-scrollbar{
+  width: 10px;
+
+}
+::-webkit-scrollbar-track
+{
+  background-color:white ;
+}
+::-webkit-scrollbar-thumb{
+  background-color:#03b3ad;
+  border-radius:4px ;
+
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color:#048c87
+
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: white;
+  color: black !important;
+  border-radius: 50%;
+  padding: 40px; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Increase the arrow size */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 1.8rem !important; 
+  font-weight: 600;
+}
+
+.icon-white {
+  filter: invert(1) brightness(2);
+}
+  
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-width: 768px) {
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    padding: 30px; 
+  }
+  
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 1.5rem !important; 
+  }
+ 
+}
+
+@media (max-width: 480px) {
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    padding: 20px; 
+  }
+  
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 1.2rem !important;
+  }
+  .icon-white {
+    filter: none; 
+    color: #02A09B !important; 
+  }
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
